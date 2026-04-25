@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Pickup in Store settings</title>
+        <title lang="de-DE">Abholung im Geschäft Einstellungen</title>
+
+        <component name="sw-entity-single-select">
+            <name>pickupShippingMethodId</name>
+            <entity>shipping_method</entity>
+            <label>Pickup shipping method</label>
+            <label lang="de-DE">Versandart für Abholung</label>
+            <helpText>Select the shipping method that should trigger store pickup address override.</helpText>
+            <helpText lang="de-DE">Wählen Sie die Versandart, die das Überschreiben der Lieferadresse auslösen soll.</helpText>
+            <required>true</required>
+        </component>
+    </card>
+
+    <card>
+        <title>Store address used for pickup orders</title>
+        <title lang="de-DE">Geschäftsadresse für Abholbestellungen</title>
+
+        <component name="sw-entity-single-select">
+            <name>storeSalutationId</name>
+            <entity>salutation</entity>
+            <label>Salutation</label>
+            <label lang="de-DE">Anrede</label>
+            <required>true</required>
+        </component>
+
+        <input-field type="text">
+            <name>storeFirstName</name>
+            <label>First name</label>
+            <label lang="de-DE">Vorname</label>
+            <required>true</required>
+        </input-field>
+
+        <input-field type="text">
+            <name>storeLastName</name>
+            <label>Last name</label>
+            <label lang="de-DE">Nachname</label>
+            <required>true</required>
+        </input-field>
+
+        <input-field type="text">
+            <name>storeCompany</name>
+            <label>Company (optional)</label>
+            <label lang="de-DE">Firma (optional)</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>storeStreet</name>
+            <label>Street</label>
+            <label lang="de-DE">Straße</label>
+            <required>true</required>
+        </input-field>
+
+        <input-field type="text">
+            <name>storeAdditionalAddressLine1</name>
+            <label>Additional address line 1 (optional)</label>
+            <label lang="de-DE">Adresszusatz 1 (optional)</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>storeAdditionalAddressLine2</name>
+            <label>Additional address line 2 (optional)</label>
+            <label lang="de-DE">Adresszusatz 2 (optional)</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>storeZipcode</name>
+            <label>ZIP code</label>
+            <label lang="de-DE">PLZ</label>
+            <required>true</required>
+        </input-field>
+
+        <input-field type="text">
+            <name>storeCity</name>
+            <label>City</label>
+            <label lang="de-DE">Stadt</label>
+            <required>true</required>
+        </input-field>
+
+        <component name="sw-entity-single-select">
+            <name>storeCountryId</name>
+            <entity>country</entity>
+            <label>Country</label>
+            <label lang="de-DE">Land</label>
+            <required>true</required>
+        </component>
+
+        <input-field type="text">
+            <name>storePhoneNumber</name>
+            <label>Phone number (optional)</label>
+            <label lang="de-DE">Telefonnummer (optional)</label>
+        </input-field>
+    </card>
+</config>
