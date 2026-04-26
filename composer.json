@@ -1,0 +1,22 @@
+{
+  "name": "pickup-in-store/pickup-in-store",
+  "description": "Shopware 6.7 plugin that overwrites shipping address for pickup orders.",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "version": "1.0.0",
+  "require": {
+    "shopware/core": "~6.7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PickupInStore\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "PickupInStore\\PickupInStore",
+    "label": {
+      "en-GB": "Pickup in Store",
+      "de-DE": "Abholung im Geschäft"
+    }
+  }
+}
