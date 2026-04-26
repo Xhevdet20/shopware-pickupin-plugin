@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Pickup in Store – Store Address</title>
+        <title lang="de-DE">Abholung im Geschäft – Filialadresse</title>
+
+        <!-- Company / Store name -->
+        <input-field type="text">
+            <name>storeCompany</name>
+            <label>Company / Store Name</label>
+            <label lang="de-DE">Firmen- / Filialname</label>
+            <placeholder>e.g. My Store GmbH</placeholder>
+            <helpText>The company or store name shown as shipping address.</helpText>
+            <helpText lang="de-DE">Firmen- oder Filialname, der als Lieferadresse verwendet wird.</helpText>
+        </input-field>
+
+        <!-- First name of the contact person -->
+        <input-field type="text">
+            <name>storeFirstName</name>
+            <label>Contact First Name</label>
+            <label lang="de-DE">Vorname Ansprechpartner</label>
+            <placeholder>e.g. John</placeholder>
+        </input-field>
+
+        <!-- Last name of the contact person -->
+        <input-field type="text">
+            <name>storeLastName</name>
+            <label>Contact Last Name</label>
+            <label lang="de-DE">Nachname Ansprechpartner</label>
+            <placeholder>e.g. Doe</placeholder>
+        </input-field>
+
+        <!-- Street and house number -->
+        <input-field type="text">
+            <name>storeStreet</name>
+            <label>Street and House Number</label>
+            <label lang="de-DE">Straße und Hausnummer</label>
+            <placeholder>e.g. Main Street 42</placeholder>
+        </input-field>
+
+        <!-- Additional address line -->
+        <input-field type="text">
+            <name>storeAdditionalAddressLine1</name>
+            <label>Additional Address Line</label>
+            <label lang="de-DE">Adresszusatz</label>
+            <placeholder>e.g. Building B, Floor 2</placeholder>
+        </input-field>
+
+        <!-- ZIP / Postal code -->
+        <input-field type="text">
+            <name>storeZipCode</name>
+            <label>ZIP / Postal Code</label>
+            <label lang="de-DE">Postleitzahl</label>
+            <placeholder>e.g. 10115</placeholder>
+        </input-field>
+
+        <!-- City -->
+        <input-field type="text">
+            <name>storeCity</name>
+            <label>City</label>
+            <label lang="de-DE">Stadt</label>
+            <placeholder>e.g. Berlin</placeholder>
+        </input-field>
+
+        <!-- Country ISO code -->
+        <input-field type="text">
+            <name>storeCountryIso</name>
+            <label>Country ISO Code (e.g. DE, US, GB)</label>
+            <label lang="de-DE">Länder-ISO-Code (z.B. DE, US, GB)</label>
+            <placeholder>DE</placeholder>
+            <helpText>Two-letter ISO 3166-1 alpha-2 country code.</helpText>
+            <helpText lang="de-DE">Zweistelliger ISO 3166-1 alpha-2 Ländercode.</helpText>
+        </input-field>
+
+        <!-- Phone number (optional) -->
+        <input-field type="text">
+            <name>storePhone</name>
+            <label>Phone Number (optional)</label>
+            <label lang="de-DE">Telefonnummer (optional)</label>
+            <placeholder>e.g. +49 30 123456</placeholder>
+        </input-field>
+    </card>
+
+</config>
